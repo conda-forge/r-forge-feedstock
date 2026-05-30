@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/forge_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/forge/forge_{{ version }}.tar.gz
-  sha256: 8a57396adc21970f57a13916ed2335d6eb35a5e29f09ee3e80f3a93298fe4e5e
+  sha256: 95a636230fb32566643e31a5695644ed78fc2fe5b2174c8754ed555854a1b9bc
 
 build:
-  number: 7
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
